@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "nafis",
+    "name": "NAFIS",
     "slug": "nafis",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,6 +20,25 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "NAFIS uses your location to find the Qibla direction."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "NAFIS counts your steps to track your daily movement goal."
+        }
+      ],
+      "expo-audio",
+      "expo-asset"
+    ],
+    "scheme": "nafis"
   }
 }
